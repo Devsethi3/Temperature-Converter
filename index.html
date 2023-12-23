@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Converter | Javascript Project</title>
+
+    <!-- Link Custom CSS File -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Remix Icon CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css" rel="stylesheet"/>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="wrapper">
+            <h1 class="heading">Temperature Converter</h1>
+            <div class="app">
+                <div class="input-action">
+                    <input type="number" id="num">
+                    <select name="unit" id="unit">
+                        <option value="Celcius">Celcius</option>
+                        <option value="Fahrenheit">Fahrenheit</option>
+                    </select>
+                </div>
+                <div class="button">
+                    <button>Submit</button>
+                </div>
+            </div>
+            <div id="result"></div>
+        </div>
+        <div class="error-message" id="error-message">
+            <p class="message"><i class="ri-error-warning-line" id="error-icon"></i><span>You must write something!</span></p>
+        </div>
+        <div class="overlay" id="overlay"></div>
+    </div>
+
+    <!-- Link Custom JS File -->
+    <script src="script.js"></script>
+</body>
+
+</html>
